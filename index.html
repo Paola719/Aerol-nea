@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Dashboard</title>
+    <link rel="stylesheet" href="AvioncitoC.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="profile">
+                <!-- Aquí va tu imagen de perfil -->
+                <img src="cliente.jpg" alt="Profile" class="profile-img">
+                <h2>ALEX JOHNSON</h2>
+                <p>alex.johnson@gmail.com</p>
+            </div>
+
+            <ul class="menu">
+                <li class="menu-item active">
+                    <span class="menu-icon">🏠</span>
+                    <span>DASHBOARD</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-icon">✈️</span>
+                    <span>FLIGHTS</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-icon">💳</span>
+                    <span>WALLET</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-icon">📄</span>
+                    <span>REPORTS</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-icon">📊</span>
+                    <span>STATISTICS</span>
+                </li>
+                <li class="menu-item">
+                    <span class="menu-icon">⚙️</span>
+                    <span>SETTINGS</span>
+                </li>
+            </ul>
+
+            <div class="active-users">
+                <h3>Active Users</h3>
+                <div class="user-avatars">
+                    
+                    <img src="avatar1.jpg" alt="User 1" class="user-avatar">
+                    <img src="Avatar2.jpg" alt="User 2" class="user-avatar">
+                    <img src="Avatar3.png" alt="User 3" class="user-avatar">
+                    <img src="avatar4.png" alt="User 4" class="user-avatar">
+                    <div class="more-users">+70</div>
+                </div>
+            </div>
+
+            <div class="world-map">
+                
+                <img src="mapita.avif" alt="World Map">
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Cards -->
+            <div class="top-cards">
+                <div class="card flight-card">
+                    <h3>Boeing 787</h3>
+                    <div class="price">$548</div>
+                    <img src="avioncitoo.jpg" alt="Plane" class="plane-icon">
+                </div>
+                <div class="card flight-card airbus">
+                    <h3>Airbus 811</h3>
+                    <div class="price">$620</div>
+                    <img src="avioncitoo.jpg" alt="Plane" class="plane-icon">
+                </div>
+                <div class="card total-flights-card">
+                    <div>
+                        <h3>Total Flights</h3>
+                        <div class="number">850</div>
+                    </div>
+                    
+                    <img src="mapita.avif" alt="World" class="world-icon">
+                </div>
+            </div>
+
+            <!-- Last Trips & Statistics -->
+            <div class="grid-2">
+                <div class="card last-trips">
+                    <h2>Last Trips</h2>
+                    <p class="card-subtitle">Overview of latest month</p>
+                    
+                    <div class="table-header">
+                        <div>Members</div>
+                        <div>Flight</div>
+                        <div>Total Members</div>
+                        <div>Ticket Price</div>
+                    </div>
+
+                    <div class="trip-row">
+                        <div class="member-info">
+                            <img src="cliente.jpg" alt="John Doe" class="member-avatar">
+                            <div class="member-details">
+                                <h4>John Doe</h4>
+                                <p>john@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>Qatar</div>
+                        <div><span class="badge">5</span></div>
+                        <div>$56k</div>
+                    </div>
+
+                    <div class="trip-row">
+                        <div class="member-info">
+                            <img src="Avatar2.jpg" alt="Martin Loiness" class="member-avatar">
+                            <div class="member-details">
+                                <h4>Martin Loiness</h4>
+                                <p>martin_loi@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>Emirates</div>
+                        <div><span class="badge">2</span></div>
+                        <div>$56k</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Statistics</h2>
+                    <div class="chart-container">
+                        <div class="bar-chart">
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 80px;"></div>
+                                <div class="bar-label">Jan</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar dark" style="height: 140px;"></div>
+                                <div class="bar-label">Feb</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 180px;"></div>
+                                <div class="bar-label">Mar</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 90px;"></div>
+                                <div class="bar-label">Apr</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar dark" style="height: 160px;"></div>
+                                <div class="bar-label">May</div>
+                            </div>
+                            <div class="bar-wrapper">
+                                <div class="bar" style="height: 120px;"></div>
+                                <div class="bar-label">Jun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flights Share & Schedule -->
+            <div class="grid-2">
+                <div class="card">
+                    <h2>Flights Share</h2>
+                    <div class="donut-chart">
+                        <svg width="200" height="200">
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#3d5550" stroke-width="30" stroke-dasharray="251 502"></circle>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#d4a748" stroke-width="30" stroke-dasharray="188 502" stroke-dashoffset="-251"></circle>
+                            <circle cx="100" cy="100" r="80" fill="none" stroke="#4a9d9c" stroke-width="30" stroke-dasharray="63 502" stroke-dashoffset="-439"></circle>
+                        </svg>
+                        <div class="donut-label">
+                            <p>Flight Share</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h2>Flights Schedule</h2>
+                    <div class="wave-chart">
+                        <div class="wave-container">
+                            <div class="y-axis">
+                                <div>6</div>
+                                <div>5</div>
+                                <div>4</div>
+                                <div>3</div>
+                                <div>2</div>
+                                <div>1</div>
+                                <div>0</div>
+                            </div>
+                            <svg class="wave-svg" viewBox="0 0 600 200" preserveAspectRatio="none">
+                                <path d="M0,100 Q150,50 300,80 T600,120" fill="none" stroke="#d4a748" stroke-width="2" opacity="0.6"/>
+                                <path d="M0,100 Q150,50 300,80 T600,120 L600,200 L0,200 Z" fill="#d4a748" opacity="0.1"/>
+                                
+                                <path d="M0,120 Q150,160 300,100 T600,60" fill="none" stroke="#3d5550" stroke-width="2"/>
+                                <path d="M0,120 Q150,160 300,100 T600,60 L600,200 L0,200 Z" fill="#f5f0e8" opacity="0.3"/>
+                            </svg>
+                            
+                            <div class="data-point large" style="left: 65%; top: 35%;">
+                                <div class="tooltip">3500<br>Passengers</div>
+                            </div>
+                            <div class="data-point" style="left: 95%; top: 15%;"></div>
+                        </div>
+                        <div class="x-axis">
+                            <div>Jan</div>
+                            <div>Feb</div>
+                            <div>Mar</div>
+                            <div>Apr</div>
+                            <div>May</div>
+                            <div>Jun</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
